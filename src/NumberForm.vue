@@ -1,5 +1,6 @@
 <template>
 <div class="number-form">
+  <h1>Steel Alphabet Numbers</h1>
   <form @submit.prevent>
     <input type="number" id="number" min="0" placeholder="Number"
            :value="number || '1'" max="65535" @input="changeNumber">
