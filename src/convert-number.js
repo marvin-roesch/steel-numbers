@@ -6,6 +6,10 @@ export default (number) => {
     return null;
   }
 
+  if (number === 0) {
+    return [0];
+  }
+
   const [digits, remainder] = numerals.reduce(
     ([ds, rem], numeral) => {
       const fits = factors.reduce(

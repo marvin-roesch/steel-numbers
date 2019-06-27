@@ -5,7 +5,7 @@
     Steel alphabet symbols from
     <a href="https://brandonsanderson.com">Brandon Sanderson's</a>&nbsp;<em>Mistborn</em> series of
     books. This app is not affiliated with Dragonsteel Entertainment in any way. SVG versions of the
-    symbols taken with permission from the
+    symbols taken with kind permission from the
     <a href="https://coppermind.net/wiki/Steel_alphabet">Coppermind</a>.
   </div>
 </div>

@@ -23,8 +23,8 @@ export default {
   },
   computed: {
     digits() {
-      const integer = parseInt(this.number || '1', 10);
-      if (integer) {
+      const integer = parseInt(this.number === undefined ? '1' : this.number, 10);
+      if (Math.floor(integer) === integer) {
         return convert(integer);
       }
       return null;
