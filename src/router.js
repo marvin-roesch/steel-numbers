@@ -1,15 +1,15 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Number from '@/Number.vue';
+import NumberForm from '@/NumberForm.vue';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/:number',
+      path: '/:number?',
       name: 'number',
-      component: Number,
+      component: NumberForm,
       props: true,
     },
   ],

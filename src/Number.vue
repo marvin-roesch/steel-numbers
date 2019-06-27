@@ -1,29 +1,19 @@
 <template>
 <div class="number">
   <div class="number-digits">
-    <digit :value="digit" v-for="digit in convertedNumber" :key="digit"></digit>
+    <digit :value="digit" v-for="(digit, index) in digits" :key="`${index}-${digit}`"></digit>
   </div>
 </div>
 </template>
 
 <script>
-import convert from '@/convert-number';
 import Digit from '@/Digit.vue';
 
 export default {
   name: 'number',
   components: { Digit },
   props: {
-    number: String,
-  },
-  computed: {
-    convertedNumber() {
-      const integer = parseInt(this.number, 10);
-      if (integer) {
-        return convert(integer);
-      }
-      return null;
-    },
+    digits: Array,
   },
 };
 </script>
