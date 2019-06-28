@@ -1,6 +1,6 @@
 <template>
 <div class="digit">
-  <img :src="`${publicPath}digits/${value}.svg`" height="64">
+  <img :src="`${publicPath}digits/${value}.svg`" height="80">
   <span class="digit-label">{{ value }}</span>
 </div>
 </template>
